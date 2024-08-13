@@ -1,0 +1,41 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Custom styles */
+@layer base {
+  body {
+    @apply m-0 font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .App-logo {
+    @apply rounded border border-neutral-700 bg-neutral-800 p-3;
+  }
+}
+
+@layer utilities {
+  /* Custom keyframes for spinning */
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .App-logo-spin {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Media query for prefers-reduced-motion */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo-spin {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}

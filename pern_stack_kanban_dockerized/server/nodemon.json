@@ -1,0 +1,6 @@
+{
+    "watch": ["../client/**/*", "index.js"],
+    "ext": "js,json,css,html",
+    "ignore": ["node_modules/**/*", "../node_modules/**/*", "../client/node_modules/**/*"],
+    "legacyWatch": true
+  }
